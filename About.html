@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zac Huffman | About</title>
+  <meta name="description" content="Learn more about Zac Huffman – IT professional, developer, and photographer.">
   <style>
-    /* Reset and font */
+    /* Base Reset */
     * {
       margin: 0;
       padding: 0;
@@ -14,8 +15,9 @@
 
     body, html {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      background-color: #f8f9fa;
+      background-color: #0a0a0a;
+      color: #eaeaea;
+      line-height: 1.6;
     }
 
     /* Header */
@@ -24,36 +26,62 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #222;
-      color: white;
+      background: rgba(15, 25, 45, 0.95);
+      backdrop-filter: blur(6px);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
 
     header h1 {
-      font-size: 1.5rem;
+      color: #ff6f3c;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Modern Nav Styling */
+    nav {
+      display: flex;
+      gap: 1.5rem;
     }
 
     nav a {
-      color: white;
+      position: relative;
+      color: #fff;
       text-decoration: none;
-      margin-left: 1.5rem;
       font-weight: 500;
-      transition: color 0.3s;
+      letter-spacing: 0.5px;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #ff6f3c;
+      transition: width 0.3s ease;
     }
 
     nav a:hover {
-      color: #00b4d8;
+      color: #ff6f3c;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     main {
-      padding-top: 80px; /* space for fixed header */
+      padding-top: 100px; /* offset for fixed header */
     }
 
-    /* Hero/About section */
+    /* Hero/About Section */
     .hero-about {
       min-height: 100vh;
       display: flex;
@@ -61,56 +89,91 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(to right, #00b4d8, #0077b6);
-      color: white;
-      padding: 2rem;
+      background: linear-gradient(to bottom right, #1b2a49, #1b4f6f);
+      color: #fff;
+      padding: 4rem 2rem;
     }
 
     .hero-about h2 {
       font-size: 3rem;
+      color: #ff6f3c;
       margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     }
 
     .hero-about p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      max-width: 750px;
+      margin-bottom: 1.2rem;
+      text-align: left;
+      color: #f5f5f5;
     }
 
-    /* Photo section */
+    /* Photo Section */
     .photo-container {
       margin-top: 2rem;
+      display: flex;
+      justify-content: center;
     }
 
     .photo-container img {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 4px solid #ff6f3c;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      transition: transform 0.4s ease;
+    }
+
+    .photo-container img:hover {
+      transform: scale(1.05);
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
-      background-color: #222;
+      background-color: #111;
       color: #ccc;
       font-size: 0.9rem;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
     }
 
     footer a {
-      color: #00b4d8;
+      color: #ff6f3c;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
+      color: #ff944d;
       text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+        gap: 1rem;
+      }
+
+      .hero-about h2 {
+        font-size: 2.2rem;
+      }
+
+      .hero-about p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Zac Huffman</h1>
@@ -123,9 +186,8 @@
 
   <main>
     <section class="hero-about">
-  <h2>About Me</h2>
-
-  <p>
+      <h2>About Me</h2>
+<p>
     Hello! I'm Zachary Huffman. Originally, I planned to study Computer Science in college, but a part-time job I took after high school unexpectedly turned into a full-fledged career. I started in a management role at a then-little-known cookie company, Insomnia Cookies. This position gave me extensive experience in corporate management, including the privilege of traveling to cities like Philadelphia, Atlanta, and locations in Florida.
   </p>
 
@@ -140,16 +202,18 @@
   <p>
     Outside of work, I spend much of my time pursuing photography. I shoot weddings and portraits, but my true passion lies in car and street photography. I also enjoy working on my own vehicle, tuning and modifying it to enhance performance. Both photography and car projects allow me to be creative while challenging myself technically—activities that bring me genuine satisfaction.
   </p>
-
-  <!-- Photo Section -->
-  <div class="photo-container">
-    <img src="your-photo.jpg" alt="Zachary Huffman">
-  </div>
-</section>
-
+      <div class="photo-container">
+        <img src="zac.jpg" alt="Zac Huffman">
+      </div>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+    © 2025 Zac Huffman • 
+    <a href="mailto:zacharysethhuffman@icloud.com">Email</a> •
+    <a href="https://www.instagram.com/the_huffington">Instagram</a> •
+    <a href="https://www.linkedin.com/in/zachary-huffman-4b9b9b306">LinkedIn</a>
   </footer>
 </body>
 </html>
+
