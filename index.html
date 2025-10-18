@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Zac Huffman | Personal website showcasing my projects, skills, and contact info.">
-  <meta name="keywords" content="Zac Huffman, Portfolio, IT, Web Development, Programming">
-  <title>Zac Huffman | Home</title>
+  <meta name="description" content="Zac Huffman | IT Professional and Developer Portfolio">
+  <meta name="keywords" content="Zac Huffman, IT, Portfolio, Web Development, Programming">
+  <title>Zac Huffman | Problem Solver | Developer</title>
   <style>
-    /* Reset and font */
     * {
       margin: 0;
       padding: 0;
@@ -21,42 +20,11 @@
     body, html {
       height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #333;
-      background-color: #f8f9fa;
+      color: #fff;
+      background-color: #0a0a0a;
     }
 
-    /* Header */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #222;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #00b4d8;
-    }
-
-    /* Hero section - full viewport */
+    /* Hero section with professional static gradient */
     .hero {
       height: 100vh;
       display: flex;
@@ -64,24 +32,26 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(to right, #00b4d8, #0077b6);
-      color: white;
       padding: 0 2rem;
-      padding-top: 4rem; /* space below fixed header */
+      background: linear-gradient(to bottom right, #1b2a49, #1b4f6f);
     }
 
     .hero h2 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 600px;
       line-height: 1.6;
+      color: #f5f5f5;
+      opacity: 0.95;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
     }
 
-    /* Hero buttons */
+    /* Buttons */
     .hero-buttons {
       margin-top: 2rem;
       display: flex;
@@ -92,76 +62,104 @@
 
     .btn {
       padding: 0.75rem 1.5rem;
-      background-color: white;
-      color: #0077b6;
       font-weight: 600;
-      border-radius: 8px;
+      border-radius: 12px;
       text-decoration: none;
-      transition: background 0.3s, color 0.3s;
+      background-color: #ff6f3c; /* unified orange button */
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #00b4d8;
-      color: white;
+      transform: scale(1.05);
+      background-color: #ff944d;
     }
 
-    .btn-secondary {
-      background-color: transparent;
-      border: 2px solid white;
-      color: white;
+    /* Wi-Fi mini-game */
+    .wifi-game {
+      margin-top: 3rem;
+      background-color: rgba(255,255,255,0.08);
+      padding: 1.5rem 2rem;
+      border-radius: 12px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     }
 
-    .btn-secondary:hover {
-      background-color: white;
-      color: #0077b6;
+    .wifi-game h3 {
+      color: #ff6f3c;
+      margin-bottom: 0.5rem;
+    }
+
+    .wifi-btn {
+      margin-top: 1rem;
+      padding: 0.7rem 1.3rem;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff6f3c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .wifi-btn:hover {
+      background-color: #ff944d;
+      transform: scale(1.05);
+    }
+
+    .wifi-output {
+      margin-top: 1rem;
+      font-style: italic;
+      color: #f0f0f0;
+      min-height: 24px;
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
-      background-color: #222;
+      background-color: #111;
       color: #ccc;
       font-size: 0.9rem;
     }
 
     footer a {
-      color: #00b4d8;
+      color: #ff6f3c;
       text-decoration: none;
       margin: 0 0.3rem;
+      transition: color 0.3s;
     }
 
     footer a:hover {
+      color: #ff944d;
       text-decoration: underline;
-    }
-
-    /* Make space for header */
-    main {
-      padding-top: 70px; /* same height as header to avoid overlap */
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Zac Huffman</h1>
-    <nav>
-      <a href="About.html">About</a>
-      <a href="Work.html">Work</a>
-      <a href="Contact.html">Contact</a>
-    </nav>
-  </header>
-
   <main>
     <section class="hero">
-      <h2>Welcome to My Personal Website</h2>
+      <h2>Cable Re-Plugger Extraordinaire</h2>
       <p>
-        Hi, I'm Zac Huffman — a passionate professional who loves learning, creating, and exploring new ideas. 
-        This website showcases my work, interests, and how to get in touch.
+        Oh hey there! — I’m Zac Huffman, digital troubleshooter, developer, and occasional cable whisperer.  
+        I make things work and fix what’s broken. I once had a beer with a CEO and spend too much on camera gear.  
+        Explore my links and see what I’m all about.
       </p>
+
       <div class="hero-buttons">
-        <a href="About.html">My Story</a>
-        <a href="Work.html" class="btn">See My Work</a>
-        <a href="Contact.html" class="btn btn-secondary">Get in Touch</a>
+        <a href="About.html" class="btn">My Story</a>
+        <a href="Work.html" class="btn">Job History</a>
+        <a href="Hobbies.html" class="btn">See My Work</a>
+        <a href="Contact.html" class="btn">Get in Touch</a>
+      </div>
+
+      <div class="wifi-game">
+        <h3>Fix the Wi-Fi</h3>
+        <p>Click the button and see if you can get the internet working again!</p>
+        <button class="wifi-btn" onclick="fixWifi()">🛠️ Try Fixing It</button>
+        <div class="wifi-output" id="wifiOutput"></div>
       </div>
     </section>
   </main>
@@ -169,9 +167,28 @@
   <footer>
     © 2025 Zac Huffman • 
     <a href="mailto:zacharysethhuffman@icloud.com">Email</a> •
-    <a href="https://github.com/YourUsername" target="_blank">GitHub</a> •
-    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">LinkedIn</a>
+    <a href="https://www.instagram.com/the_huffington">Instagram</a> •
+    <a href="https://www.linkedin.com/in/zachary-huffman-4b9b9b306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
   </footer>
+
+  <script>
+    const messages = [
+      "Restarting the router... 🔄",
+      "Still no signal... 😬",
+      "Unplugged it and plugged it back in... ✅",
+      "Connected to the neighbor's Wi-Fi instead! 📶",
+      "The problem was DNS again, wasn’t it? 💀",
+      "Wi-Fi fixed! You’re a legend! 🏆",
+      "Have you tried turning it off and on again? 💡"
+    ];
+
+    function fixWifi() {
+      const output = document.getElementById("wifiOutput");
+      const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+      output.textContent = randomMsg;
+    }
+  </script>
 </body>
 </html>
+
 
