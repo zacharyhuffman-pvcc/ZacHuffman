@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zac Huffman | Work</title>
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    main {
+      padding-top: 80px; /* space for fixed header */
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Hero/work intro section */
+    .hero-work {
+      text-align: center;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+
+    .hero-work h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-work p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    /* Job card section */
+    .job-card {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.2s;
+    }
+
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-card h3 {
+      color: #0077b6;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-card h4 {
+      color: #00b4d8;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-card p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Skills section */
+    .skills-card {
+      background-color: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 3rem;
+    }
+
+    .skills-card h3 {
+      color: #0077b6;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .skills-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zac Huffman</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-work">
+      <h2>My Work Experience</h2>
+      <p>Here you can find all the roles I've held, the companies I've worked for, and the skills I've gained along the way.</p>
+    </section>
+
+    <!-- Job Sections -->
+    <section class="job-card">
+      <h3>Retail Parts Pro / Assistant Manager</h3>
+      <h4>Advance Auto, Harrisonburg | October 2021 – Present</h4>
+      <p>
+        Gained deep knowledge of automotive parts and maintenance while assisting customers with technical questions and product recommendations. 
+        Supported store operations through inventory management, merchandising, and promoting sales initiatives. 
+        Developed strong customer service and leadership skills by guiding customers and resolving concerns efficiently.
+      </p>
+    </section>
+
+    <section class="job-card">
+      <h3>Assistant Manager</h3>
+      <h4>McAlister’s Deli, Harrisonburg | December 2018 – June 2021</h4>
+      <p>
+        Led daily restaurant operations and supervised staff to maintain quality service and efficiency. 
+        Trained and coached team members, handled customer relations, and oversaw financial reporting and cash management. 
+        Strengthened organizational and multitasking abilities in a fast-paced environment.
+      </p>
+    </section>
+
+    <section class="job-card">
+      <h3>General Manager</h3>
+      <h4>Insomnia Cookies, Charlottesville | January 2015 – October 2018</h4>
+      <p>
+        Managed store operations including staffing, budgeting, inventory, and customer service. 
+        Focused on team leadership, sales growth, and brand promotion through community engagement and marketing efforts. 
+        Consistently improved store performance and fostered a positive workplace culture.
+      </p>
+    </section>
+
+    <!-- Skills & Certifications -->
+    <section class="skills-card">
+      <h3>Skills & Certifications</h3>
+      <p>
+        <strong>Technical Skills:</strong> HTML, CSS, SQL, Python, Microsoft Office, Adobe Photoshop<br><br>
+        <strong>Certifications:</strong> CompTIA A+, CompTIA Network+, CompTIA Security+, AWS Cloud Practitioner<br><br>
+        <strong>Additional Strengths:</strong> Leadership, Communication, Problem-Solving, Customer Relations
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zac Huffman | Home</title>
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    /* Hero section - full viewport */
+    .hero {
+      height: 100vh; /* Full screen */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Vertical center */
+      align-items: center;     /* Horizontal center */
+      text-align: center;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: white;
+      padding: 0 2rem;
+      padding-top: 4rem; /* space below fixed header */
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Make space for header */
+    main {
+      padding-top: 70px; /* same height as header to avoid overlap */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zac Huffman</h1>
+    <nav>
+      <a href="About.html">About</a>
+      <a href="Work.html">Work</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to My Personal Website</h2>
+      <p>
+        Hi, I'm Jolly Roger — a passionate professional who loves learning, creating, and exploring new ideas. 
+        This website showcases my work, interests, and how to get in touch.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+  </footer>
+</body>
+</html>

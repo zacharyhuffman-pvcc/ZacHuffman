@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zac Huffman | Contact</title>
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    main {
+      padding-top: 80px; /* space for fixed header */
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Hero/contact intro section */
+    .hero-contact {
+      text-align: center;
+      min-height: 30vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: white;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+
+    .hero-contact h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-contact p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    /* Contact info */
+    .contact-info {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .contact-info h3 {
+      color: #0077b6;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .contact-info a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact form */
+    .contact-form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h3 {
+      color: #0077b6;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #0077b6;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,119,182,0.3);
+    }
+
+    button {
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #00b4d8;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zac Huffman</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="work.html">Work</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-contact">
+      <h2>Contact Me</h2>
+      <p>Have a question, collaboration idea, or opportunity? Reach out using the form below or the contact details provided.</p>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>
+        📍 Harrisonburg, United States<br>
+        📞 <a href="tel:+15402094270">(540) 209-4270</a><br>
+        ✉️ <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+      </p>
+    </section>
+
+    <!-- Contact Form (Formspree-ready) -->
+    <section class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
+        <input type="hidden" name="_subject" value="New message from Zac Huffman Portfolio">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+  </footer>
+</body>
+</html>

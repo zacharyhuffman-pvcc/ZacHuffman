@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zac Huffman | About</title>
+  <style>
+    /* Reset and font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00b4d8;
+    }
+
+    main {
+      padding-top: 80px; /* space for fixed header */
+    }
+
+    /* Hero/About section */
+    .hero-about {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero-about h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-about p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Photo section */
+    .photo-container {
+      margin-top: 2rem;
+    }
+
+    .photo-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1.5rem 2rem;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zac Huffman</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-about">
+  <h2>About Me</h2>
+
+  <p>
+    Hello! I'm Zachary Huffman. Originally, I planned to study Computer Science in college, but a part-time job I took after high school unexpectedly turned into a full-fledged career. I started in a management role at a then-little-known cookie company, Insomnia Cookies. This position gave me extensive experience in corporate management, including the privilege of traveling to cities like Philadelphia, Atlanta, and locations in Florida.
+  </p>
+
+  <p>
+    Before the COVID-19 pandemic, I decided to leave this role and return to school to pursue a degree in Business. While I did well in my studies, the pandemic put into perspective what I truly enjoyed and wanted for my career. During this time, I also had to pause my education to support my father through serious health complications. Although he ultimately passed away, this period reinforced my resilience and determination.
+  </p>
+
+  <p>
+    Currently, I’m nearly finished with my Associate’s degree in Cloud Computing. I am an honors student with a near-perfect GPA and actively participate in a coding club, which allows me to sharpen my programming skills and collaborate with like-minded peers. I also hold several IT certifications and am passionate about building a career in IT, which I find far more mentally satisfying than business work. I hope to eventually pursue a Bachelor’s in Computer Science.
+  </p>
+
+  <p>
+    Outside of work, I spend much of my time pursuing photography. I shoot weddings and portraits, but my true passion lies in car and street photography. I also enjoy working on my own vehicle, tuning and modifying it to enhance performance. Both photography and car projects allow me to be creative while challenging myself technically—activities that bring me genuine satisfaction.
+  </p>
+
+  <!-- Photo Section -->
+  <div class="photo-container">
+    <img src="your-photo.jpg" alt="Zachary Huffman">
+  </div>
+</section>
+
+
+  <footer>
+    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+  </footer>
+</body>
+</html>
