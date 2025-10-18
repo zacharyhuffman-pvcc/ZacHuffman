@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zac Huffman | Work</title>
+  <meta name="description" content="Zac Huffman | Explore my professional work experience, technical skills, and certifications.">
   <style>
     /* Reset and font */
     * {
@@ -14,8 +15,9 @@
 
     body, html {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background-color: #0a0a0a;
+      color: #eaeaea;
+      line-height: 1.6;
     }
 
     /* Header */
@@ -24,39 +26,65 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #222;
-      color: white;
+      background: rgba(15, 25, 45, 0.95);
+      backdrop-filter: blur(6px);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
       z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
 
     header h1 {
-      font-size: 1.5rem;
+      color: #ff6f3c;
+      font-size: 1.4rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Modern Nav Styling */
+    nav {
+      display: flex;
+      gap: 1.5rem;
     }
 
     nav a {
-      color: white;
+      position: relative;
+      color: #fff;
       text-decoration: none;
-      margin-left: 1.5rem;
       font-weight: 500;
-      transition: color 0.3s;
+      letter-spacing: 0.5px;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #ff6f3c;
+      transition: width 0.3s ease;
     }
 
     nav a:hover {
-      color: #00b4d8;
+      color: #ff6f3c;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     main {
-      padding-top: 80px; /* space for fixed header */
+      padding-top: 100px;
       padding: 2rem;
       max-width: 1000px;
       margin: 0 auto;
     }
 
-    /* Hero/work intro section */
+    /* Hero Section */
     .hero-work {
       text-align: center;
       min-height: 30vh;
@@ -64,46 +92,50 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to right, #00b4d8, #0077b6);
-      color: white;
-      padding: 2rem;
+      background: linear-gradient(to bottom right, #1b2a49, #1b4f6f);
+      color: #fff;
+      padding: 3rem 2rem;
       margin-bottom: 2rem;
       border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     }
 
     .hero-work h2 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.8rem;
+      color: #ff6f3c;
+      margin-bottom: 0.8rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
     }
 
     .hero-work p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 700px;
       line-height: 1.6;
     }
 
-    /* Job card section */
+    /* Job Card Section */
     .job-card {
-      background-color: white;
+      background-color: #1b1b1b;
       padding: 1.5rem 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
       margin-bottom: 2rem;
-      transition: transform 0.2s;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .job-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
     }
 
     .job-card h3 {
-      color: #0077b6;
+      color: #ff6f3c;
       font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
 
     .job-card h4 {
-      color: #00b4d8;
+      color: #f5f5f5;
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
@@ -111,46 +143,67 @@
     .job-card p {
       font-size: 1rem;
       line-height: 1.5;
+      color: #ccc;
     }
 
-    /* Skills section */
+    /* Skills Section */
     .skills-card {
-      background-color: white;
-      padding: 1.5rem 2rem;
+      background-color: #1b1b1b;
+      padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
       margin-top: 3rem;
+      text-align: center;
     }
 
     .skills-card h3 {
-      color: #0077b6;
+      color: #ff6f3c;
       font-size: 1.8rem;
       margin-bottom: 1rem;
-      text-align: center;
     }
 
     .skills-card p {
       font-size: 1rem;
       line-height: 1.6;
-      text-align: center;
+      color: #ccc;
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 1.5rem 2rem;
-      background-color: #222;
+      background-color: #111;
       color: #ccc;
       font-size: 0.9rem;
+      margin-top: 3rem;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.4);
     }
 
     footer a {
-      color: #00b4d8;
+      color: #ff6f3c;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
+      color: #ff944d;
       text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-work h2 {
+        font-size: 2rem;
+      }
+      .hero-work p {
+        font-size: 1rem;
+      }
+      .job-card h3 {
+        font-size: 1.3rem;
+      }
+      .job-card h4 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -168,7 +221,7 @@
     <!-- Hero Section -->
     <section class="hero-work">
       <h2>My Work Experience</h2>
-      <p>Here you can find all the roles I've held, the companies I've worked for, and the skills I've gained along the way.</p>
+      <p>Explore my professional roles, the companies I’ve contributed to, and the skills I’ve developed along the way.</p>
     </section>
 
     <!-- Job Sections -->
@@ -214,7 +267,5 @@
   </main>
 
   <footer>
-    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
-  </footer>
-</body>
-</html>
+     Zac Huffman • 
+   
