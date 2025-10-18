@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zac Huffman | Personal website showcasing my projects, skills, and contact info.">
+  <meta name="keywords" content="Zac Huffman, Portfolio, IT, Web Development, Programming">
   <title>Zac Huffman | Home</title>
   <style>
     /* Reset and font */
@@ -10,6 +12,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body, html {
@@ -52,11 +58,11 @@
 
     /* Hero section - full viewport */
     .hero {
-      height: 100vh; /* Full screen */
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Vertical center */
-      align-items: center;     /* Horizontal center */
+      justify-content: center;
+      align-items: center;
       text-align: center;
       background: linear-gradient(to right, #00b4d8, #0077b6);
       color: white;
@@ -75,6 +81,41 @@
       line-height: 1.6;
     }
 
+    /* Hero buttons */
+    .hero-buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: white;
+      color: #0077b6;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00b4d8;
+      color: white;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background-color: white;
+      color: #0077b6;
+    }
+
     /* Footer */
     footer {
       text-align: center;
@@ -87,6 +128,7 @@
     footer a {
       color: #00b4d8;
       text-decoration: none;
+      margin: 0 0.3rem;
     }
 
     footer a:hover {
@@ -113,14 +155,23 @@
     <section class="hero">
       <h2>Welcome to My Personal Website</h2>
       <p>
-        Hi, I'm Jolly Roger — a passionate professional who loves learning, creating, and exploring new ideas. 
+        Hi, I'm Zac Huffman — a passionate professional who loves learning, creating, and exploring new ideas. 
         This website showcases my work, interests, and how to get in touch.
       </p>
+      <div class="hero-buttons">
+        <a href="About.html">My Story</a>
+        <a href="Work.html" class="btn">See My Work</a>
+        <a href="Contact.html" class="btn btn-secondary">Get in Touch</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Zac Huffman • <a href="mailto:zacharysethhuffman@icloud.com">zacharysethhuffman@icloud.com</a>
+    © 2025 Zac Huffman • 
+    <a href="mailto:zacharysethhuffman@icloud.com">Email</a> •
+    <a href="https://github.com/YourUsername" target="_blank">GitHub</a> •
+    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">LinkedIn</a>
   </footer>
 </body>
 </html>
+
